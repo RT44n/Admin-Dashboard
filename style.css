@@ -57,10 +57,10 @@ html, body{
 
 .header{
     grid-area: 1/2/2/3;
-    background-color: black;
+    background-color: white;
 }
 
 .main-content{
     grid-area: 2/2/3/3;
-    background-color: white;
+    background-color: black;
 }
