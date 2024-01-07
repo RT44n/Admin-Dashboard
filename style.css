@@ -64,3 +64,23 @@ html, body{
     grid-area: 2/2/3/3;
     background-color: black;
 }
+
+.header{
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+
+.header-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    grid-row: 1/2;
+}
+
+.header-bottom{
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
