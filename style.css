@@ -62,7 +62,11 @@ html, body{
 
 .main-content{
     grid-area: 2/2/3/3;
-    background-color: black;
+    padding: 10px;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: green;
 }
 
 .header{
@@ -83,4 +87,10 @@ html, body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.card-holder{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
