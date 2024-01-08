@@ -15,7 +15,7 @@ html, body{
 .sidebar{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     grid-area: 1/1/3/2;
     background-color: orange;
     padding: 20px;
@@ -57,7 +57,8 @@ html, body{
 }
 
 .help-icons-holder{
-    justify-self: flex-start;
+    margin-top: 40px;
+
 }
 
 .header{
@@ -70,7 +71,7 @@ html, body{
     padding: 25px;
 
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
     background-color: black;
 }
 
@@ -99,11 +100,12 @@ html, body{
 }
 .searchbar input{
     min-width: 200px;
-    max-width: 800px;
+    max-width: 1000px;
     height: 30px;
-    background-color: whitesmoke;
+    background-color: #e2e8f0;
     border-radius: 20px;
     box-shadow: none;
+    border: 0;
     flex: auto;
 }
 
@@ -175,7 +177,7 @@ html, body{
     align-items: center;
 }
 
-.last-button{
+.project-button :last-child{
     margin-right: 0px;
 }
 
@@ -186,6 +188,9 @@ html, body{
     border-radius: 20px;
     box-shadow: none;
     margin-right: 20px;
+    border: 0;
+    font-size: 15px;
+    font-weight: 500;
 }
 
 .main-content-title {
@@ -213,7 +218,7 @@ html, body{
 }
 .card-title{
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .card-icons{
@@ -228,3 +233,62 @@ html, body{
     margin-top: 10px;
 }
 
+.news-section{
+    padding: 25px;
+    padding-top: 0;
+}
+
+.news-section-title{
+    color: white;
+    font-size: 30px;
+    font-weight: 600;  
+}
+.announcements{
+    background-color: white;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.announce-card{
+    border-bottom: 3px solid black;
+    padding: 10px;
+}
+
+.announcements :last-child{
+    border-bottom: 0;
+}
+
+.announce-title{
+    font-size: 17px;
+    font-weight: 500;
+}
+.trending{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;   
+}
+.trending-account{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.trending-account-text{
+    margin-left: 15px;
+}
+
+.trending-account-id    {
+    margin-bottom: 0;
+    font-weight: 400;
+}
+.trending-account-name{
+    margin-top: 0;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.trending-account-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
