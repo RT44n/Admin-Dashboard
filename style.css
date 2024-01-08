@@ -24,6 +24,7 @@ html, body{
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
+    flex: auto;
   
 }
 .user-icon{
@@ -55,6 +56,10 @@ html, body{
     font-weight: 700;
 }
 
+.help-icons-holder{
+    justify-self: flex-start;
+}
+
 .header{
     grid-area: 1/2/2/3;
     background-color: white;
@@ -62,15 +67,18 @@ html, body{
 
 .main-content{
     grid-area: 2/2/3/3;
-    padding: 10px;
+    padding: 25px;
 
     display: grid;
     grid-template-columns: 2fr 1fr;
-    background-color: green;
+    background-color: black;
 }
 
 .header{
-    padding: 10px;
+    padding-left: 40px;
+    padding-top: 25px;
+    padding-right: 40px;
+    padding-bottom: 5px;
     display: grid;
     grid-template-rows: 1fr 2fr;
 }
@@ -82,6 +90,52 @@ html, body{
     grid-row: 1/2;
 }
 
+.searchbar{
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: auto;
+}
+.searchbar input{
+    min-width: 200px;
+    max-width: 800px;
+    height: 30px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    box-shadow: none;
+    flex: auto;
+}
+
+.profile{
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.header-icon{
+    width: 30px;
+    height: 30px;
+    padding-right: 20px;
+}
+.profile-icon{
+    border-radius: 50%;
+}
+.profile > .profile-icon{
+    height: 50px;
+    width: 50px;
+    padding-right: 20px;
+    justify-self: flex-start;
+}
+
+.profile > p{
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 20px;
+}
+
 .header-bottom{
     grid-row: 2/3;
     display: flex;
@@ -89,8 +143,88 @@ html, body{
     justify-content: space-between;
 }
 
+.greetings{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    padding-bottom: 0px;  
+}
+.greeting-text{
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.greeting{
+    margin: 0;
+}
+
+.user-name{
+    font-size: 30px;
+    margin: 0;
+}
+
+.greetings > .profile-icon{
+    height: 70px;
+    width: 70px;
+}
+
+.project-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.last-button{
+    margin-right: 0px;
+}
+
+.project-button{
+    background-color: orange;
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    box-shadow: none;
+    margin-right: 20px;
+}
+
+.main-content-title {
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+}
+
 .card-holder{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    
 }
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    border-left: 10px solid orange;
+    
+    padding: 15px;
+}
+.card-title{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.card-icons{
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+
+.card-icons img{
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
